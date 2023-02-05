@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Orlistat"> 
+	<main>
+		<h1> <span class="text-gradient"> Orlistat 120 mg</span></h1>
+		<p class="instructions">
+			El <a href="https://es.wikipedia.org/wiki/Orlistat"> Orlistat </a> o tetrahidrolipstatina es un fármaco para tratar la obesidad mediante la inhibición potente, selectiva y reversible de las lipasas gástricas y pancreáticas. Actúa principalmente reduciendo la absorción de la grasa contenida en los alimentos al inhibir la hidrólisis de los triglicéridos, aumentando su eliminación por las heces en un 30%. <br> Su función principal es evitar la absorción de parte de las grasas de la dieta humana, reduciendo así la ingesta de calorías. </p>
+		<img src="public/imgOrlistat.jpg" class="image" width="500" height="300">
+		<p class="precio"> Precio por unidad S/9.00</p><br><br><br><br>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+		text-align: center;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+		text-align: center;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+	.precio {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0;
+		text-align: center;
+	}
+</style>

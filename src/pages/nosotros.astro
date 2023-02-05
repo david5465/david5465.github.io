@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Botica San Tito">
+	<main>
+		<h1> <span class="text-gradient">Botica San Tito</span></h1>
+		<p class="instructions"> En Boticas San Tito estamos comprometidos con brindarle a medicamentos de alta calidad a un excelente precio incluso sin receta. Contamos con logística para la venta y distribución a nivel nacional de gran variedad de medicamentos neuro estimulantes para tratar con problemas de déficit de atención, sobrepeso, somnolencia, trastornos alimenticios, ansiedad, depresión, dolor crónico entre otros. Contribuyendo con el bienestar y productividad de nuestros clientes con total discreción y confianza. 
+			</p>
+		<ul role="list" class="link-card-grid"> 
+			<Card
+				href="https://wa.me/51904719375"
+				title="Consulte al  +51 904719375"
+				body="Los mejores medicamentos para mejorar la capacidad intelectual, desempeño y memoria"
+			/>
+		</ul>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+		padding-bottom: 2rem;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+		padding-left: 4rem;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: rgb(255, 255, 255);
+		padding: 1rem;
+		border-radius: 0.4rem;
+		margin: auto;
+		text-align: center;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
