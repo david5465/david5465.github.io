@@ -9,7 +9,10 @@ import Card from '../components/Card.astro';
 		<p class="instructions">
 			El <a href="https://es.wikipedia.org/wiki/Orlistat"> Orlistat </a> o tetrahidrolipstatina es un fármaco para tratar la obesidad mediante la inhibición potente, selectiva y reversible de las lipasas gástricas y pancreáticas. Actúa principalmente reduciendo la absorción de la grasa contenida en los alimentos al inhibir la hidrólisis de los triglicéridos, aumentando su eliminación por las heces en un 30%. <br> Su función principal es evitar la absorción de parte de las grasas de la dieta humana, reduciendo así la ingesta de calorías. </p>
 		<img src="../../../imgOrlistat.jpg" class="image" width="500" height="300">
-		<p class="precio"> Precio por unidad S/9.00</p><br><br><br><br>
+		<p class="precio"> Precio por unidad S/9.00</p>
+		<button class="boton"></button>
+		<a class="whatsapp-link" href="https://wa.me/51904719375"> </a>
+		<h2>Realice sus<br>consultas</h2>
 	</main>
 </Layout>
 
@@ -25,6 +28,32 @@ import Card from '../components/Card.astro';
 		margin: 0;
 		text-align: center;
 	}
+	h2 {
+		position: fixed;
+		bottom: 130px;
+		right: 50px;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.boton{
+		position: fixed;
+        bottom: 75px;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+		background: none;
+	}
+	.whatsapp-link {
+        position: fixed;
+        bottom: 80px;
+        right: 44px;
+        width: 100px;
+        height: 50px;
+		background-image: url(../../walogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;

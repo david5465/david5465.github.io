@@ -8,8 +8,11 @@ import Card from '../components/Card.astro';
 		<h1> <span class="text-gradient"> Sertralina 50 mg</span></h1>
 		<p class="instructions">
 			La <a href="https://es.wikipedia.org/wiki/Sertralina"> Sertralina</a> es un antidepresivo perteneciente al grupo de los inhibidores selectivos de la recaptación de serotonina (ISRS). Tiene efectos antidepresivos y ansiolíticos. Se usa clínicamente para el tratamiento de la depresión, el trastorno obsesivo-compulsivo, el trastorno de pánico, el trastorno por déficit de atención, la fobia social y el trastorno disfórico premenstrual.         </p>
-         <img src="../../../imgSertralina.jpg" class="image" width="500" height="300">
-		 <p class="precio"> Precio por unidad S/3.00</p><br><br><br><br><br><br><br><br>
+        <img src="../../../imgSertralina.jpg" class="image" width="500" height="300">
+		<p class="precio"> Precio por unidad S/3.00</p>
+		<button class="boton"></button>
+		<a class="whatsapp-link" href="https://wa.me/51904719375"> </a>
+		<h2>Realice sus<br>consultas</h2>
 	</main>
 </Layout>
 
@@ -25,6 +28,32 @@ import Card from '../components/Card.astro';
 		margin: 0;
 		text-align: center;
 	}
+	h2 {
+		position: fixed;
+		bottom: 130px;
+		right: 50px;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.boton{
+		position: fixed;
+        bottom: 75px;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+		background: none;
+	}
+	.whatsapp-link {
+        position: fixed;
+        bottom: 80px;
+        right: 44px;
+        width: 100px;
+        height: 50px;
+		background-image: url(../../walogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;

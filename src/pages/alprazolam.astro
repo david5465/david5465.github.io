@@ -8,7 +8,10 @@ import Layout from '../layouts/Layout.astro';
 		<p class="instructions">
 			El <a href="https://es.wikipedia.org/wiki/Alprazolam"> Alprazolam</a> se utiliza para el tratamiento de los estados de ansiedad, especialmente en las crisis de angustia, agorafobia, ataques de pánico y estrés intenso. Es un químico con propiedades demostradas para dormir casi sin efectos adversos en dosis bajas. </p>
         <img src="../../../imgAlpra.jpg" class="image" width="500" height="300">
-		<p class="precio"> Precio por unidad S/1.50</p><br><br><br><br><br><br><br><br><br><br>
+		<p class="precio"> Precio por unidad S/1.50</p>
+		<button class="boton"></button>
+		<a class="whatsapp-link" href="https://wa.me/51904719375"> </a>
+		<h2>Realice sus<br>consultas</h2>
 	</main>
 </Layout>
 
@@ -24,6 +27,32 @@ import Layout from '../layouts/Layout.astro';
 		margin: 0;
 		text-align: center;
 	}
+	h2 {
+		position: fixed;
+		bottom: 130px;
+		right: 50px;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.boton{
+		position: fixed;
+        bottom: 75px;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+		background: none;
+	}
+	.whatsapp-link {
+        position: fixed;
+        bottom: 80px;
+        right: 44px;
+        width: 100px;
+        height: 50px;
+		background-image: url(../../walogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;

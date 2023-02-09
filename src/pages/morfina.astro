@@ -9,7 +9,10 @@ import Card from '../components/Card.astro';
 		<p class="instructions">
 			La <a href="https://es.wikipedia.org/wiki/Morfina"> Morfina</a> es el principal alcaloide del opio. Es un medicamento que calma el dolor (produce analgesia). Actúa reduciendo los efectos de las endorfinas (moléculas que intervienen en la transmisión del dolor) que se encuentran en el cerebro y en la columna vertebral. La morfina se combina con los receptores opiáceos del cerebro y bloquea la transmisión de estímulos de dolor de forma que, incluso si la causa de dolor persiste, hace que se sienta menos dolor. También es capaz de producir otras acciones como sedación o euforia. </p>
 		<img src="../../../imgMorfina.jpg" class="image" width="500" height="300">
-		<p class="precio"> Precio por unidad S/9.00</p><br><br><br><br><br><br><br>
+		<p class="precio"> Precio por unidad S/9.00</p>
+		<button class="boton"></button>
+		<a class="whatsapp-link" href="https://wa.me/51904719375"> </a>
+		<h2>Realice sus<br>consultas</h2>
 	</main>
 </Layout>
 
@@ -25,6 +28,32 @@ import Card from '../components/Card.astro';
 		margin: 0;
 		text-align: center;
 	}
+	h2 {
+		position: fixed;
+		bottom: 130px;
+		right: 50px;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.boton{
+		position: fixed;
+        bottom: 75px;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+		background: none;
+	}
+	.whatsapp-link {
+        position: fixed;
+        bottom: 80px;
+        right: 44px;
+        width: 100px;
+        height: 50px;
+		background-image: url(../../walogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;

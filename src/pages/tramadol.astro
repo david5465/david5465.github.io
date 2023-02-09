@@ -8,8 +8,11 @@ import Card from '../components/Card.astro';
 		<h1> <span class="text-gradient"> Tramadol 50 mg</span></h1>
 		<p class="instructions">
 			El <a href="https://es.wikipedia.org/wiki/Tramadol"> Tramadol</a> es un analgésico opioide débil y atípico que alivia el dolor actuando sobre células nerviosas específicas de la médula espinal y del cerebro. Excelente para el tratamiento del dolor cónico y con efectos antidepresivos a corto plazo </p>
-		<img src="../../../imgTramadol.jpg" class="image" width="500" height="300">
-		<p class="precio"> Precio por unidad S/3.00</p><br><br><br><br><br><br><br><br><br><br>
+		<img src="public/imgTramadol.jpg" class="image" width="500" height="300">
+		<p class="precio"> Precio por unidad S/3.00</p>
+		<button class="boton"></button>
+		<a class="whatsapp-link" href="https://wa.me/51904719375"> </a>
+		<h2>Realice sus<br>consultas</h2>
 	</main>
 </Layout>
 
@@ -25,6 +28,32 @@ import Card from '../components/Card.astro';
 		margin: 0;
 		text-align: center;
 	}
+	h2 {
+		position: fixed;
+		bottom: 130px;
+		right: 50px;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.boton{
+		position: fixed;
+        bottom: 75px;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+		background: none;
+	}
+	.whatsapp-link {
+        position: fixed;
+        bottom: 80px;
+        right: 44px;
+        width: 100px;
+        height: 50px;
+		background-image: url(../../walogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
