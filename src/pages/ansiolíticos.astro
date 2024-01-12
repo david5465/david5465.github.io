@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Ansiolíticos"> 
+	<main>
+		<h1> <span class="text-gradient"> Ansiolíticos</span></h1>
+		<p class="instructions">
+			En Pastillas Lima conseguimos y entregamos medicamentos para la ansiedad de la más alta calidad al por mayor y menor </p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://pastillaslima.netlify.app/alprazolam/"
+				title="Alprazolam"
+				body="Compre Alprazolam en Lima al 904719375."
+			/>
+			<Card
+				href="https://pastillaslima.netlify.app/clonazepam/"
+				title="Clonazepam"
+				body="Compre Clonazepam en Lima al 904719375."
+			/>
+			<Card
+				href="https://pastillaslima.netlify.app/diazepam/"
+				title="Diazepam"
+				body="Compre Diazepam en Lima al 904719375"
+			/>
+			<Card
+				href="https://pastillaslima.netlify.app/lorazepam/"
+				title="Lorazepam"
+				body="Compre Lorazepam en Lima al 904719375"
+			/>
+			<Card
+				href="https://pastillaslima.netlify.app/fenobarbital/"
+				title="Fenobarbital"
+				body="Compre Fenobarbital en Lima al 904719375."
+			/>
+			
+		</ul><br><br><br><br><br><br><br><br><br><br>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+		text-align: center;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+		text-align: center;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
